@@ -54,6 +54,13 @@ public class Main
 	    
 	    System.out.println("Enter the col index on which you want to sort");
 	    int col_no = sc.nextInt();
+	    
+	    if(col_no>col && col_no<0)
+	    {
+	        System.out.println("print valid col no.");
+	        return;
+	    }
+	        
 	    arr = Sorted(arr, col_no);
 	    
 	    
